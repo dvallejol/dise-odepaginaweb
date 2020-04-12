@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina incial</title>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+        <header class="header">
+                <nav>
+                     <div class="logo">
+                        <img src="img/logounad.png" alt="no existe">
+                     </div>
+                 
+                     <div id="menuhori">
+                        <ul> 
+                            <li id="item"><a href="index.html">Inicio</a></li>
+                            
+                             <li id="item"><a href="#">Lenguages</a>
+                                <ul id="desple">
+                                    <li><a href="html5.html">Html5</a></li>
+                                    <li><a href="css3.html">Css3</a></li>
+                                    <li><a href="javascript.html">JAVASCRIPT</a></li>
+                                    
+                                </ul>
+                            
+                            </li>
+                             <li id="item"><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                      <div class="icono" id="open">
+                          <span>&#9776;</span>
+                      </div>
+                      
+                  </nav>
+              </header>
+          
+    <div class="slide-contenedor">
+        <div class="mislider fade">
+            <img src="img/sliderunad1.jpg">
+        </div>
+        <div class="mislider fade">
+                <img src="img/sliderunad2.jpg">
+        </div>
+        <div class="mislider fade">
+                <img src="img/sliderunad3.jpg">
+        </div>
+        <div class="mislider fade">
+                <img src="img/sliderunad4.jpg">
+        </div>
+        
+        <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+                <span class="barra" onclick="posicionSlide(4)"></span>
+               
+        </div>
+    </div>
+
+  
+     
+     <section class="platos">
+                
+                <div class="contenedor1">
+                
+                        <div class="platos__columna">
+                                <img src="img/HTML5.png" height="300" width="200" alt="" class="platos__img">
+                                <h3>HTML 5</h3>
+                        </div>
+                        <div class="platos__columna">
+                                <img src="img/CSS3.png"  height="300" width="200" alt=""  class="platos__img">
+                                <h3>CSS3</h3>
+                        </div>
+                        <div class="platos__columna">
+                                <img src="img/JAVASCRITPT.png" height="300" width="200" alt=""  class="platos__img">
+                                <h3>JAVASCRIPT</h3>
+                        </div>
+                </div> 
+                        
+      </section>
+
+      <main class="contenedor seccion">
+                <hr>
+                <MARQUEE bgcolor="blue">
+                <h2 class="fw-300 centrar-texto">DISEÑO DE PAGNINAS WEB</h2>
+                </MARQUEE>
+                <hr>
+                 <article class="seccion"></article>
+                <div class="contenedor-anuncios">
+                    <div class="anuncio">
+                        <img src="img/HTML5UNAD.jfif" width="500" height="240" alt="anuncio de importaciones">
+                        <div class="contenido-anuncio">
+                            <h4>HTML 5</h4>
+                            <br>
+                            <p>lenguaje markup(de hecho, las siglas de HTML significan Hyper Text Markup Language) usado para estructurar y presentar el contenido para la web...</p>
+                            <a href="html5.html" class="boton boton-amarillo d-block">Saber más</a>
+                        </div>
+                        </div>
+    
+                    <div class="anuncio">
+                        <img src="img/CSS31.jfif" width="500" height="240" alt="Anuncio casa de lujo">
+                        <div class="contenido-anuncio">
+                            <h4>CSS3</h4>
+                            <br>
+                            <p> El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento... </p>
+                            
+                            
+                            <a href="css3.html" class="boton boton-amarillo d-block">Saber más</a>
+                        </div>
+                    </div>
+    
+                    <div class="anuncio">
+                        <img src="img/JAVASCRIPTUNAD.jfif"  width="500" height="240"  alt="agenciamiento aduanero">
+                        <div class="contenido-anuncio">
+                            <h4>JAVASCRIPT</h4>
+                             <br>
+                            <p>es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3​ basado en prototipos, imperativo, débilmente tipado y dinámico...</p>
+                            <a href="javascript.html" class="boton boton-amarillo d-block">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+    
+           
+        </main>
+
+        <section class="imagen-contacto">
+                        <div class="contenedor contenido-contacto">
+                            <h2>aprenda sobre los lenguajes orienntados a la web</h2>
+                            <p>diligencie el formulario y pronto nos comunicaremos con usted</p>
+                            <a href="contacto.html" class="boton boton-amarillo">Contactános</a>
+                        </div>
+        </section>
+       
+        <footer class="site-footer seccion">
+                        <div class="contenedor contenedor-footer">
+                            <nav class="navegacion">
+                                <a href="nosotros.html">Nosotros</a>
+                                <a href="anuncios.html">Anuncios</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="contacto.html">Contacto</a>
+                            </nav>
+                            <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+                        </div>
+        </footer>
+    
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

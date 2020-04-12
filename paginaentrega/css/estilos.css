@@ -1,0 +1,427 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    font-family: fantasy;
+    background: #314755;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    height: inherit;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.logo img{
+    height: inherit;
+}
+
+.icono{
+    display: none;
+    color:#fff;
+    font-size: 24px;
+    padding: 23.5px 20;
+}
+
+.icono:hover{
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 30px 25px;
+}
+
+.hero{
+    background: url(../img/fondo.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slide-contenedor{
+    max-width: 100%;
+    max-height: 130vh;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /*margin: auto;*/
+}
+
+.mislider{
+    margin: inherit;
+    padding-top: 80px;
+    
+    display: none;
+    transition: 2s;
+    max-height: 100vh;
+
+}
+
+
+.mislider img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+*.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.direcciones a{
+    color:#fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+.direcciones a:hover{
+    background: rgba(0,0,0, .5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+.barra{
+    cursor: pointer;
+    height: 2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+.active{
+    background: chocolate;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+    
+}
+
+/*contenedor*/
+.contenedor{
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+    
+  
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
+
+.platos{
+    background-image: url(../img/fondo.jpg); 
+    color:  blue;  
+    text-align: center;
+    padding: 15 px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.platos .contenedor1{  
+    padding-top: 100px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+
+.platos__columna{
+       width:  30%;
+   }
+.platos h3{
+    font-size: 30px;
+}
+.platos .platos__titulo{
+    font-size: 40px;
+}
+.platos .platos__txt{
+    text-align: justify;
+    padding: 15px;
+    
+}
+.platos__img{
+    width: 80%;
+    border-radius: 50%;
+    border: 7px solid  blue; 
+}
+
+
+  
+
+/*servicios contenedor*/
+
+
+
+/*anuncios*/
+.contenedor-anuncios{
+     display: flex; 
+    justify-content: space-between;
+}
+
+.anuncio {
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #bb55b5;
+    background: #f5f5f5;
+    
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+    
+}
+
+.contenido-anuncio h3, 
+.contenido-anuncio p{
+    margin: 0;
+}
+
+
+
+
+d-block{
+    display: block !important;
+}
+/** Botones **/
+.boton {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-amarillo {
+    background-color: blue;
+}
+.boton-verde {
+    background-color: blue;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**utilidades**/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+.d-block {
+    display: block!important;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+   
+
+
+
+
+@keyframes fade {
+    from {opacity: .4;}
+    to{opacity: 1;}
+    
+}
+@media screen and (max-width:700px){
+    .icono{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        top: 80px;
+        background: #2c3e50;
+        left: 0;
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .menu a{
+        display: inherit;
+        background: #34495e;
+        border: 1px solid #fff;
+        text-align: left;
+
+
+
+    }
+}
+
+/*contacto home*/
+
+.imagen-contacto{
+    background-image: url(../img/fondolenguajes.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto{
+    flex: 0 0 95%;
+    color: #fff;
+}
+.contenido-contacto p{
+    font-size: 1.8rem;
+}
+
+marquee{
+    color: white;
+}
+
+/** Footer **/
+.site-footer {
+    background-color: blue;
+    margin: 0;
+}
+
+/* menu horizontal*/
+#menuhori ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menuhori #item{
+    float: left;
+}
+#menuhori #item a{
+    background: rgba(0, 51, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 12px 22px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+#menuhori #desple{
+    display: none;
+}
+
+#menuhori #item:hover #desple{
+    display: block;
+}
+
+#menuhori #item a:hover{
+    background: rgba(0, 102, 204, 1);
+}
+
+  /*****pie de pagina*/
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}

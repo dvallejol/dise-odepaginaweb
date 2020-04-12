@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+             <div class="logo">
+                <img src="img/logounad.png" alt="no existe">
+             </div>
+         
+             <div id="menuhori">
+                <ul> 
+                    <li id="item"><a href="index.html">Inicio</a></li>
+                    
+                     <li id="item"><a href="#">Lenguages</a>
+                        <ul id="desple">
+                            <li><a href="html5.html">Html5</a></li>
+                            <li><a href="css3.html">Css3</a></li>
+                            <li><a href="javascript.html">JAVASCRIPT</a></li>
+                            
+                        </ul>
+                    
+                    </li>
+                     <li id="item"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+              <div class="icono" id="open">
+                  <span>&#9776;</span>
+              </div>
+              
+          </nav>
+      </header>
+
+    <div class="container section">
+         
+            <div class="row">
+                <div class="col s12">
+                   <div class="card">
+                       <div class="card-content">
+                           <p>
+                               CSS3.
+                               <hr size="5">       
+                           </p>
+                       </div>
+   
+                       <div class="card-tabs">
+                         <ul class="tabs tabs-fixed-width">
+                           <li class="tab"><a href="#testUno">¿Qué es css3?</a></li>
+                           <li class="tab"><a href="#testDos">Definición</a></li>
+                           <li class="tab"><a href="#testTres">ejemplo</a></li>
+                           <li class="tab"><a href="#testCuatro">ejercicios</a></li>
+                         </ul>
+                       </div>
+   
+                       <div class="card-content blue">
+                           <div id="testUno">
+                                   <div class="video-container">
+                                    <iframe width="640" height="360" src="https://www.youtube.com/embed/24gNhTcy6pw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                  </div>
+                           </div>
+                           <div id="testDos">
+                                <h1 class="fw-300">CSS3: </h1>
+
+                                <p>CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada.
+
+                                    Las hojas de estilo es una tecnología que nos permite controlar la apariencia de una página web. En un principio, 
+                                    los sitios web se concentraban más en su contenido que en su presentación.
+                                    
+                                    HTML no pone atención en la apariencia del documento, sino en la estructura. CSS describe como los
+                                     elementos dispuestos en la página son presentados al usuario. CSS es un gran avance que complementa el 
+                                     HTML y la Web en general.
+                                    
+                                    Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así
+                                     como el lugar donde disponer texto e imágenes en la página.
+                                </p>
+                                
+                                
+                                <p>
+                                    El lenguaje de las Hojas de Estilo está definido en la Especificaciones CSS1, CSS2 y CSS3 del World Wide Web Consortium (W3C), 
+                                    es un estándar aceptado por toda la industria relacionada con la Web, o por lo menos, gran parte de 
+                                    navegadores (es verdad que el Internet Explorer de Microsoft nos dió algunos dolores de cabeza en versiones antiguos). 
+
+Veremos que podemos asociar las reglas de estilo a las marcas HTML de tres maneras: directamente a la marca, en el head de la página o agrupar 
+las reglas de estilo en un archivo independiente con extensión *.css
+                                </p>
+
+                                 
+                           </div>
+                           <div id="testTres">
+                                <h3 class="fw-300 centrar-texto">Ejemplos</h3>
+                                <p>
+                                    <img src="img/EJEMPLO2CSS3.jpg">
+                                </p>
+                               
+
+                           </div>
+                           <div id="testCuatro">
+                            <h3 class="fw-300 centrar-texto">Ejercicios</h3>
+                            <ol type="square">
+                              <li>Problema:
+                                Definir reglas para los elementos HTML: h1,h2,h3,h4,h5 y h6. Inicializar la propiedad font-size con valores decrecientes para cada uno de los elementos (40,30,25,20,15 y 10 píxeles). Inicializar la propiedad font-family para las tres primeros elementos con los valores: Arial, Arial Black y Arial Narrow.</li>    
+                              <li>Problema:
+                                Definir para el elemento párrafo (p) el color verde puro, texto centrado. Imprimir varios párrafos para ver los resultados según la regla de estilo definida. ¿Qué valor debemos definir para que el texto aparezca con color rojo oscuro?</li>
+                            </ol>
+                           
+
+                       </div>
+   
+                       </div>
+                   </div>
+                </div>
+                
+            </div>
+       </div>
+
+       <footer class="site-footer seccion">
+            <div class="contenedor contenedor-footer">
+                
+                <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+            </div>
+        </footer>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+   
+   <script>
+       document.addEventListener('DOMContentLoaded', function(){
+        M.AutoInit();
+       
+       });
+   </script>
+
+    
+</body>
+</html>
